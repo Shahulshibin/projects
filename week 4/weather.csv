@@ -1,0 +1,13 @@
+Month,AvgTemp,Humidity,Rainfall
+January,22,68,12
+February,24,65,10
+March,28,60,5
+April,32,55,2
+May,35,50,1
+June,34,58,8
+July,30,70,20
+August,29,72,18
+September,28,68,10
+October,26,65,6
+November,24,70,15
+December,23,72,25
