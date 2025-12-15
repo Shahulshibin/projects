@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Validation</title>
+</head>
+<body>
+
+<h3 style="text-align:center">Validation Form</h3>
+
+<form id="myForm" style="width:25%; margin:0 auto; border:solid orange; padding:20px;">
+
+    <label>Name:</label>
+    <input type="text" id="name" required><br><br>
+
+    <label>Email:</label>
+    <input type="text" id="email" required><br><br>
+
+    <label>Mobile No:</label>
+    <input type="text" id="mobile" required><br><br>
+
+    <label>Gender:</label>
+    <input type="radio" name="gender" value="male"> Male
+    <input type="radio" name="gender" value="female"> Female <br><br>
+
+    <label>Hobbies:</label>
+    <input type="checkbox" name="hobby" value="reading"> Reading
+    <input type="checkbox" name="hobby" value="gaming"> Gaming
+    <input type="checkbox" name="hobby" value="traveling"> Traveling <br><br>
+
+    <input type="button" value="Submit" onclick="validateForm()">
+
+</form>
+
+<script>
+function validateForm() {
+
+    let name = document.getElementById("name").value.trim();
+    let email = document.getElementById("email").value.trim();
+    let mobile = document.getElementById("mobile").value.trim();
+
+    if (name === "" || email === "" || mobile === "") {
+        alert("Please fill in all required fields.");
+        return;
+    }
+
+    let emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z]+\.[a-z]{2,3}$/;
+    let mobilePattern = /^[7-9][0-9]{9}$/;
+
+    if (!emailPattern.test(email)) {
+        alert("Invalid email format.");
+        return;
+    }
+
+    if (!mobilePattern.test(mobile)) {
+        alert("Mobile number must be 10 digits and start with 7, 8, or 9.");
+        return;
+    }
+
+    alert("Form submitted successfully!");
+}
+</script>
+
+</body>
+</html>
