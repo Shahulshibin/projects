@@ -29,9 +29,11 @@ This project focuses on building a Machine Learning model to predict house price
 ```bash
 git clone https://github.com/Shahulshibin/projects/tree/main/week%209%20%20house%20price%20prediction-ml
 
+Navigate to the project directory:
+cd house-price-prediction-ml
+
 Install dependencies:
 pip install -r requirements.txt
-
 
 Run the Jupyter Notebook:jupyter notebook notebooks/house_price_prediction.ipynb
 
