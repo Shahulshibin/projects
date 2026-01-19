@@ -1,0 +1,4 @@
+Week 7 Statistical Analysis Results
+Mean Total Sales: 123650.48
+95% CI: (104019.26802085702, 143281.69197914295)
+R2 Score: 0.8839073148081258
